@@ -1,0 +1,96 @@
+<view class="person-view">
+	
+	<view class="person-top">
+		<view class="{{dlClassName==1? 'dldl' : 'a'}}" id="dl1">
+			<dt bindtap="personDisplay" data-index="1" tap="leave">
+				<span>艺术分类</span>
+				<image src="/images/person/sanjiao.png" class="img1"></image>
+				<image src="/images/person/sanjiao-light.png"class="img2"></image>
+			</dt>
+			<dd>全部分类</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+		</view>
+		<view class="{{dlClassName==2 ? 'dldl' : 'a'}}" id="dl2">
+			<dt bindtap="personDisplay"data-index="2" tap="leave">
+				<span>协会会员</span>
+				<image src="/images/person/sanjiao.png" class="img1"></image>
+				<image src="/images/person/sanjiao-light.png"class="img2"></image>
+			</dt>
+			<dd>全部分类</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+		</view>
+		<view class="{{dlClassName==3 ? 'dldl' : 'a'}}" id="dl3">
+			<dt bindtap="personDisplay" data-index="3" tap="leave">
+				<span>毕业院校</span>
+				<image src="/images/person/sanjiao.png" class="img1"></image>
+				<image src="/images/person/sanjiao-light.png"class="img2"></image>
+			</dt>
+			<dd>全部分类</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+		</view>
+		<view class="{{dlClassName==4 ? 'dldl' : 'a'}}" id="dl4">
+			<dt bindtap="personDisplay"data-index="4" tap="leave">
+				<span>地区</span>
+				<image src="/images/person/sanjiao.png" class="img1"></image>
+				<image src="/images/person/sanjiao-light.png"class="img2"></image>
+			</dt>
+			<dd>全部分类</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+			<dd>水彩画</dd>
+			<dd>书法</dd>
+		</view>
+	</view>
+	
+	
+	<view class="actor">
+		<scroll-view scroll-y="true" class="person-scroll">
+		<ul>
+			<li wx:for="{{person}}" wx:for-item="item">
+				<image src="{{item.img}}"></image>
+				<b>{{item.name}}</b>
+			</li>
+		</ul>
+		<view class="person-bottom">
+			<view class="view1">上一页</view>
+			<input value="1"/>
+			<view class="view2">下一页</view>
+		</view>
+
+		</scroll-view>
+	</view>
+	
+</view>

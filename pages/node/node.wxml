@@ -1,0 +1,11 @@
+<view class="node-view">
+    <view class="node-picture">
+       <image src="/images/node/Spreadtrum1.jpg"></image>
+       <image src="/images/node/Spreadtrum2.jpg"></image>
+       <image src="/images/node/Spreadtrum3.jpg"></image>
+       <image src="/images/node/Spreadtrum4.jpg"></image>
+       <image src="/images/node/Spreadtrum5.jpg"></image>
+       <image src="/images/node/Spreadtrum6.jpg"></image>
+    </view>
+
+</view>

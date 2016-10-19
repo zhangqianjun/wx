@@ -1,0 +1,91 @@
+<view class="main-view">
+    <view class="list-loading">
+      <loading hidden="{{loadingHidden}}">努力加载中...</loading>
+    </view>
+    <scroll-view scroll-y="true" bindscrolltoupper="actionToupper"  upper-threshold="0" lower-threshold="0" bindscrolltolower="actionTolower"scroll-top="{{refreshHidden ? 1 : 0}}">
+    <view hidden="{{refreshHidden}}">
+        <button plain="true" loading="true">努力刷新中...</button>
+    </view>
+    <ul class="nav-view">
+        <li>
+            <image src="/images/main/sort_new1.png"></image>
+            <span>绘画</span>
+        </li>
+        <li>
+            <image src="/images/main/sort_new2.png"></image>
+            <span>书法</span>
+        </li>
+        <li>
+            <image src="/images/main/sort_new3.png"></image>
+            <span>陶瓷</span>
+        </li>
+        <li>
+            <image src="/images/main/sort_new4.png"></image>
+            <span>珠宝玉石</span>
+        </li>
+        <li>
+            <image src="/images/main/sort_new5.png"></image>
+            <span>传统工艺</span>
+        </li>
+        <li>
+            <image src="/images/main/sort_new6.png"></image>
+            <span>文玩杂项</span>
+        </li>
+
+    </ul>
+    
+
+    <view class="main-picture">
+        <ul class="swiper-dian">
+            <li class="{{current==0 ? 'act' : ''}}" data-index="0"></li>
+            <li class="{{current==1 ? 'act' : ''}}" data-index="1"></li>
+            <li class="{{current==2 ? 'act' : ''}}" data-index="2"></li>
+            <li class="{{current==3 ? 'act' : ''}}" data-index="3"></li>
+        </ul>
+        <swiper class="swiper-view"  indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}"current="{{current}}" bindchange="changeSwiperDian">
+            <swiper-item>
+                <image src="/images/main/act13.png"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="/images/main/act12.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="/images/main/act11.jpg"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="/images/main/act3.jpg"></image>
+            </swiper-item>
+            
+        </swiper>
+        
+    </view>
+    <view class="title">
+            <image src="/images/main/logo.gif"></image>
+            <span>推荐作品</span>
+    </view>
+    <view class="main-title">
+        
+
+        <view class="main-content">
+            
+            <ul>
+                <navigator url="../detail/detail?id={{item.id}}" wx:for="{{list}}" wx:for-item="item">
+                <li>
+                    
+                    <image src="{{item.img}}" ></image>
+                    <span style="display:none;">{{item.id}}</span>
+                    <b>{{item.title}}</b>
+                    <div>
+                        <span>{{item.price}}</span>
+                        <image src="/images/main/shopping.gif"></image>
+                    </div>
+                </li>
+                </navigator>
+            </ul>
+        </view>
+    </view>
+    <view hidden="{{loadmoreHidden}}">
+         <button plain="true" loading="true">努力加载中...</button>
+    </view>
+    </scroll-view>
+</view>

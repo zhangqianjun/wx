@@ -1,0 +1,8 @@
+<template name="my">
+    <modal title="登录">
+        <text>用户名:</text>
+        <input auto-focus="true" value="请输入用户名"/>
+        <text>密码:</text>
+        <input value="请输入密码"/> 
+    </modal>
+</template>

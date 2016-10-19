@@ -1,0 +1,64 @@
+{
+  "pages":[
+    "pages/main/main",
+    "pages/detail/detail",
+    "pages/person/person",
+    "pages/node/node",
+    "pages/lang/lang",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+      "color":"#a9b7b7",
+      "selectedColor":"#f54372",
+      "borderStyle":"white",
+      "list":[
+        {
+          
+          "pagePath":"pages/main/main",
+          "text":"艺术品",
+          "iconPath":"images/main/main.gif",
+          "selectedIconPath":"images/main/main-light.gif"
+
+        },
+        {
+          
+          "pagePath":"pages/person/person",
+          "text":"艺术家",
+          "iconPath":"images/main/person.gif",
+          "selectedIconPath":"images/main/person-light.gif"
+
+        },
+        {
+          
+          "pagePath":"pages/node/node",
+          "text":"资讯",
+          "iconPath":"images/main/node.gif",
+          "selectedIconPath":"images/main/node-light.gif"
+
+        },
+        {
+          
+          "pagePath":"pages/lang/lang",
+          "text":"展讯",
+          "iconPath":"images/main/lang.gif",
+          "selectedIconPath":"images/main/lang-light.gif"
+
+        },
+        {
+          
+          "pagePath":"pages/my/my",
+          "text":"我的",
+          "iconPath":"images/main/my.gif",
+          "selectedIconPath":"images/main/my-light.gif"
+
+        }
+      ]
+
+  }
+}

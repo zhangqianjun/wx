@@ -1,0 +1,2 @@
+<import src="/libs/item.wxml"/>
+<template is="my"/>
